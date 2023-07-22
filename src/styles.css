@@ -134,6 +134,7 @@ main {
   height: 410px;
   flex-shrink: 0;
   align-self: stretch;
+  padding-left: 90px;
 }
 main h2 {
   font-weight: 700;
