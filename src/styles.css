@@ -27,10 +27,36 @@ body {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+.instagram-embeds {
+  margin: 30px 0;
+}
 .card {
   background: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+.card-header.grid.grid-2-columns {
+  grid-template-columns: 150px 1fr; /* Change the first column width to 150px */
+}
+
+.card-header.grid.grid-2-columns .img-responsive {
+  max-width: 100%;
+  height: auto;
+  width: 150px; /* Set the width of the café image to 150px */
+  height: 150px; /* Set the height of the café image to 150px */
+}
+
+.card-header.grid.grid-2-columns .embed {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Maintain the aspect ratio of the iframe */
+}
+
 .card-body {
   padding: 30px;
 }
@@ -205,5 +231,11 @@ footer a {
 
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
